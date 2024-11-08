@@ -1,0 +1,16 @@
+
+.admin_main{
+    width: 90%;
+    margin: 20px auto;
+}
+.admin_nav ul{
+    display: flex;
+}
+.admin_nav ul li{
+    list-style: none;
+}
+.admin_link{
+    text-decoration: none;
+    color: cadetblue;
+    padding: 0 20px;
+}

@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .contect {
+    padding: 60px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .contect_main {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contect-name {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .con_input {
+    margin-bottom: 20px;
+  }
+  
+  .con_input label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .con_input input,
+  .con_input textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .con_input input:focus,
+  .con_input textarea:focus {
+    border-color: #61dafb;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .but {
+    text-align: center;
+  }
+  
+  .but button {
+    padding: 12px 20px;
+    background-color: #61dafb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .but button:hover {
+    background-color: #21a1f1;
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 768px) {
+    .contect_main {
+      padding: 30px;
+    }
+  
+    .contect-name {
+      font-size: 1.8rem;
+    }
+  
+    .con_input input,
+    .con_input textarea {
+      padding: 10px;
+      font-size: 0.95rem;
+    }
+  
+    .but button {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .contect_main {
+      padding: 20px;
+    }
+  
+    .contect-name {
+      font-size: 1.6rem;
+    }
+  
+    .con_input input,
+    .con_input textarea {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  
+    .but button {
+      font-size: 0.9rem;
+    }
+  }
+  

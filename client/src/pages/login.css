@@ -1,0 +1,153 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .login {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .main {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .main h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    width: 100%;
+  }
+  
+  .login_input {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .login_input label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .login_input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .login_input input:focus {
+    border-color: #61dafb;
+  }
+  
+  .but {
+    margin-top: 20px;
+  }
+  
+  .but button {
+    padding: 12px 20px;
+    background-color: #61dafb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .but button:hover {
+    background-color: #21a1f1;
+  }
+  
+  /* Responsive CSS */
+  
+  /* For Tablets and Medium Screens */
+  @media (max-width: 992px) {
+    .main {
+      padding: 30px;
+      width: 450px;
+    }
+  
+    .main h1 {
+      font-size: 1.8rem;
+    }
+  
+    .login_input input {
+      padding: 8px;
+      font-size: 0.95rem;
+    }
+  
+    .but button {
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* For Mobile Screens */
+  @media (max-width: 768px) {
+    .main {
+      padding: 20px;
+      width: 300px;
+    }
+  
+    .main h1 {
+      font-size: 1.6rem;
+    }
+  
+    .login_input input {
+      padding: 7px;
+      font-size: 0.9rem;
+    }
+  
+    .but button {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* For Very Small Screens */
+  @media (max-width: 576px) {
+    .main {
+      padding: 15px;
+      width: 300px;
+    }
+  
+    .main h1 {
+      font-size: 1.4rem;
+    }
+  
+    .login_input input {
+      padding: 6px;
+      font-size: 0.85rem;
+    }
+  
+    .but button {
+      font-size: 0.85rem;
+    }
+  }
+  

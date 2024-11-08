@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Header Styling */
+  .header {
+    background-color: #333;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo-band h2 {
+    color: #fff;
+    font-size: 1.8rem;
+  }
+  
+  /* Navbar Styling */
+  .navbar ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar ul li {
+    margin-left: 20px;
+  }
+  
+  .nav_link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav_link:hover {
+    color: #61dafb;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .nav_link {
+      font-size: 0.9rem;
+    }
+  
+    .logo-band h2 {
+      font-size: 1.6rem;
+    }
+  }
+  
+  /* Mobile View: Collapsed Menu */
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+      display: none; /* Hide menu by default for mobile */
+    }
+  
+    .navbar ul li {
+      margin: 10px 0;
+    }
+  
+    .navbar.active ul {
+      display: flex; /* Show menu on mobile when active */
+    }
+  
+    /* Burger Menu */
+    .burger-menu {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      width: 30px;
+      height: 20px;
+      justify-content: space-between;
+      margin-left: 20px;
+    }
+  
+    .burger-menu span {
+      height: 3px;
+      background-color: #fff;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+  
+    .burger-menu.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    .burger-menu.active span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .burger-menu.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+  
+  /* Small Mobile View */
+  @media (max-width: 576px) {
+    .nav_link {
+      font-size: 0.85rem;
+    }
+  
+    .logo-band h2 {
+      font-size: 1.4rem;
+    }
+  }
+  
